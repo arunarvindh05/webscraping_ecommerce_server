@@ -1,15 +1,3 @@
-// const express = require('express');
-// const {amazonDataLoad} = require('../controllers/amazonProducts.controller')
-
-// const router = express.Router();
-
-
-
-// router.post('/amazon', amazonDataLoad);
-
-
-// module.exports = router;
-
 const express = require('express');
 const router = express.Router();
 const {

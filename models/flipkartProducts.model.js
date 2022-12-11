@@ -1,20 +1,3 @@
-// const mongoose = require('mongoose');
-
-// const flipKartProductSchema = new mongoose.Schema({
-//     id : String,
-//     brand: String,
-//     name: String,     
-//     price: String,
-//     rating: String,
-//     image: String,
-//     link: String
-// },{
-//     timestamps : true
-// })
-
-// const flipKartProductList = mongoose.model('flipkartdata', flipKartProductSchema);
-// module.exports = flipKartProductList;
-
 const mongoose = require('mongoose');
 
 const flipkartSchema = mongoose.Schema(

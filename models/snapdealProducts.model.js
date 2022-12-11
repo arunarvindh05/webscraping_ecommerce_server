@@ -1,20 +1,3 @@
-// const mongoose = require('mongoose');
-
-// const snapDealProductSchema = new mongoose.Schema({
-//     id : String,
-//     brand: String,
-//     name: String,     
-//     price: String,
-//     rating: String,
-//     image: String,
-//     link: String
-// },{
-//     timestamps : true
-// })
-
-// const snapDealProductList = mongoose.model('snapdealdata', snapDealProductSchema);
-// module.exports = snapDealProductList;
-
 const mongoose = require('mongoose');
 
 const snapdealSchema = mongoose.Schema(

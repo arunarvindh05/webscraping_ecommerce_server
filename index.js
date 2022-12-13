@@ -31,5 +31,5 @@ const PORT = process.env.PORT;
 app.listen(PORT, () => {
     console.log(`App is running on PORT ${PORT}`)
     getProducts()
-    const job = CronJob.schedule('* * */12 * *', getProducts);
+    const job = CronJob.schedule('* */12 * * *', getProducts);
 })

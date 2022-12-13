@@ -30,6 +30,6 @@ app.get('/', (req, res) => {
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
     console.log(`App is running on PORT ${PORT}`)
-    getProducts()
+    //getProducts()
     const job = CronJob.schedule('* */12 * * *', getProducts);
 })

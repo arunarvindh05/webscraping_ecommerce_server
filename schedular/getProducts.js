@@ -15,11 +15,11 @@ const productArray = [
 ];
 
 async function getProductDataFromAmazon(url, productSearch) {
-  const browser = await puppeteer.launch({
-    executablePath: `/path/to/Chrome`,
-    //...
-  });
-  //const browser = await puppeteer.launch();
+  // const browser = await puppeteer.launch({
+  //   executablePath: `/path/to/Chrome`,
+  //   //...
+  // });
+  const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.goto(url);
   let html = await page.evaluate(() => document.body.innerHTML);
@@ -71,11 +71,11 @@ async function getProductDataFromAmazon(url, productSearch) {
 }
 
 async function getProductDataFromFlipkart(url, productSearch) {
-  const browser = await puppeteer.launch({
-    executablePath: `/path/to/Chrome`,
-    //...
-  });
-  //const browser = await puppeteer.launch();
+  // const browser = await puppeteer.launch({
+  //   executablePath: `/path/to/Chrome`,
+  //   //...
+  // });
+  const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.setDefaultNavigationTimeout(0);
   await page.goto(url);
@@ -127,11 +127,11 @@ async function getProductDataFromFlipkart(url, productSearch) {
 }
 
 async function getProductDataFromSnapdeal(url, productSearch) {
-  const browser = await puppeteer.launch({
-    executablePath: `/path/to/Chrome`,
-    //...
-  });
-  //const browser = await puppeteer.launch();
+  // const browser = await puppeteer.launch({
+  //   executablePath: `/path/to/Chrome`,
+  //   //...
+  // });
+  const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.goto(url);
   let html = await page.evaluate(() => document.body.innerHTML);
